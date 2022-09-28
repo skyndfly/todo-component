@@ -1,0 +1,235 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-family: Arial;
+}
+h1{
+    margin: 0;
+}
+header{
+    padding: 20px;
+
+    align-items: flex-end;
+    background-color: rgba(199, 202, 238, 0.31);
+    color: #626262;
+}
+header h1{
+    font-size: 32px;
+    letter-spacing: -3px;
+}
+header a{
+    color: #626262;
+    text-decoration: none;
+}
+section{
+    /*padding: 50px;*/
+}
+.section__content{
+    width: 1000px;
+    margin: 0 auto;
+}
+section a, .create button{
+    display: inline-block;
+    text-decoration: none;
+
+    transition: transform .3s;
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    color: #fff;
+    border-radius: 12px;
+}
+.create .button{
+    width: 50%;
+    margin: 0 auto;
+}
+section a:hover, .create button:hover{
+    transform: scale(1.05);
+    text-decoration: none;
+    color: #fff;
+}
+.new{
+    margin-bottom: 20px;
+    background-color: #08af24;
+}
+.edit{
+    background-color: #eacd05;
+}
+.info{
+    background-color: #0533ea;
+}
+.delete{
+    background-color: #af081b;
+}
+td{
+    padding: 15px;
+}
+table{
+    width: 100%;
+    border-top: 1px solid rgba(98, 98, 98, 0.29);
+    border-collapse: collapse
+}
+.table__head td{
+    border-bottom: 2px solid rgba(98, 98, 98, 0.42);
+    font-weight: 600;
+}
+.create{
+    border-radius: 12px;
+    padding: 20px;
+    width: 1000px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    border: 1px solid rgba(98, 98, 98, 0.29);
+}
+.create label{
+    font-weight: 600;
+}
+.create input, .create textarea{
+    border: none;
+    border: 2px solid rgba(98, 98, 98, 0.42);
+    outline: none;
+    padding: 10px 15px;
+    border-radius: 12px;
+    transition: border-color .3s;
+}
+.create input:focus, .create textarea:focus{
+    border-color: rgba(98, 98, 98, 0.95);
+}
+.create textarea{
+    height: 100px;
+}
+.text h1{
+    font-size: 32px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    border-top: 1px solid rgba(98, 98, 98, 0.29);
+    padding-top: 10px;
+
+    
+}
+.text{
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(98, 98, 98, 0.29);
+}
+.index__form{
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 10px 0;
+}
+.index__form input{
+    width: 90%;
+    border: none;
+    padding: 10px;
+    background-color: rgba(98, 98, 98, 0.29);
+    outline: none;
+}
+.index__form button{
+    outline: none;
+    width: 10%;
+    border: none;
+    padding: 10px;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+    align-items: center;
+
+}
+li{
+    list-style: none;
+}
+.pagination a{
+    color: #000;
+    transition: transform .1s;
+    padding: 5px 8px;
+    outline: none;
+    border-radius: 12px;
+    border: 1px solid #0015ff;
+}
+.disabled{
+    background-color: rgba(0, 21, 255, 0.22);
+    padding: 5px 8px;
+    border-radius: 12px;
+    cursor: no-drop;
+}
+.active a{
+    background-color: #0015ff;
+    border-radius: 12px;
+    color: #fff;
+    padding: 5px 8px;
+}
+.delete-btn{
+    display: block;
+    color: #af081b;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+.delete-btn:hover{
+    color: #af081b;
+}
+a svg{
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+section .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.alert{
+    width: 1000px;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+}
+.edit__btn{
+    display: block;
+    color: #8e7d04;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+}
+.edit__btn:hover{
+    color: #a59205;
+}
+.functions{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+form h2{
+    text-align: center;
+    font-size: 16px;
+    margin: 0;
+    padding: 0;
+}
+form h2 a{
+    color: #0015ff;
+    padding: 0;
+}
+form h2 a:hover{
+    transform: scale(1);
+    text-decoration: underline;
+    color: #0015ff;
+}
+.header__link{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__link div{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
